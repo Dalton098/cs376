@@ -9,6 +9,7 @@
     MS-DOS. This serves the application. A fourth duty of the operating system is communications
     which involves sharing information between processes or even other computers. This serves the
     application.
+  - OS allocates shared hardware resources
 - **Why is it hard to nail down the exact boundaries of the OS?**
   - As the OS is a piece of software itself, defining exactly what constitutes the OS is difficult.  We can confidently state: The operating system is software that facilitates the sharing of resources on a computer.
   - OS allows user to interact with applications, file systems, and devices. OS allocates shared hardware resources, file systems, and devices to the applications.
@@ -72,4 +73,6 @@
 - **Why is the queue data structure important for OS process management?**
   - It is the way in which process management is handled. It is a FIFO manner. CPU uses a queue that contains the ID of processes that are ready to execute. The OS retrieves the process’s information and loads it into the CPU to be processed.
 - **What are the different ways processes can communicate? Advantages and Disadvantages of each?**
-  - For synchronous when sending, the sending process is blocked until the message reaches where it is intended to go. When sending with asynchronous communication, the process sends the message and then goes back to what it was doing. When blocking with synchronous, the receiver is blocked until a message is available whereas with asynchronous, the receiver retrieves a message or a null. Asynchronous is faster but it is less reliable than synchronous. Usually, both types of communication are available in the system.
+  - For synchronous when sending, the sending process is blocked until the message reaches where it is intended to go. When blocking with synchronous, the receiver is blocked until a message is available   
+  - When sending with asynchronous communication, the process sends the message and then goes back to what it was doing. asynchronous, the receiver retrieves a message or a null.
+  - Asynchronous is faster but it is less reliable than synchronous. Usually, both types of communication are available in the system.
